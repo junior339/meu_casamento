@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casamento de Júnior & Vitória</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fonte bonita para o contador -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script>
         // Contagem regressiva
         document.addEventListener('DOMContentLoaded', function() {
@@ -44,31 +48,33 @@
 
     <nav class="navbar">
         <ul>
-            <li><a href="#historia">Nossa História</a></li>
-            <li><a href="#evento">Detalhes do Evento</a></li>
-            <li><a href="#presentes">Presentes</a></li>
-            <li><a href="#confirmacao">Confirme sua Presença</a></li>
+            <li><a href="#historia"><i class="fa-solid fa-heart"></i> Nossa História</a></li>
+            <li><a href="#evento"><i class="fa-solid fa-calendar-day"></i> Detalhes do Evento</a></li>
+            <li><a href="#presentes"><i class="fa-solid fa-gift"></i> Presentes</a></li>
+            <li><a href="#confirmacao"><i class="fa-solid fa-check-circle"></i> Confirme sua Presença</a></li>
         </ul>
     </nav>
 
     <div style="text-align:center; margin: 30px 0;">
-        <h2 style="color:#7e57c2;">Contagem Regressiva</h2>
-        <div id="countdown" style="font-size:1.5em; font-weight:bold;"></div>
+        <h2 style="color:#7e57c2;"><i class="fa-solid fa-hourglass-half"></i> Contagem Regressiva</h2>
+        <div id="countdown" class="contador-bonito"></div>
     </div>
 
     <main>
         <section id="historia" class="section">
             <div class="container">
-                <h2>Nossa História</h2>
+                <h2><i class="fa-solid fa-heart"></i> Nossa História</h2>
                 <p>
-
 Bem-vindos ao nosso cantinho digital, onde compartilhamos os capítulos mais especiais da nossa jornada! Nem sempre soubemos que iríamos nos encontrar, mas o destino, com sua magia particular, fez com que nossos caminhos se cruzassem.
 <br>
-Tudo começou em uma tarde ensolarada em um calebe de amigos, onde olhares se encontraram e sorrisos tímidos se trocaram. Desde aquele momento, uma conexão inexplicável nos uniu. As conversas fluíram naturalmente, e logo percebemos que havia algo especial entre nós.</p>
-                <p>Com o passar do tempo, nossa amizade se transformou em amor. Descobrimos que compartilhávamos sonhos, risadas e até mesmo algumas manias estranhas. Cada encontro era uma nova aventura, cada mensagem trocada um motivo para sorrir.</p>
+Tudo começou em uma tarde ensolarada em um calebe de amigos, onde olhares se encontraram e sorrisos tímidos se trocaram. Desde aquele momento, uma conexão inexplicável nos uniu. As conversas fluíram naturalmente, e logo percebemos que havia algo especial entre nós.
+                </p>
                 <p>
-
-Os dias se transformaram em semanas, as semanas em meses, e a cada novo momento, a certeza crescia: éramos feitos um para o outro.Construímos memórias em viagens, rimos até a barriga doer . Aprendemos a admirar as qualidades um do outro e a celebrar as diferenças que nos complementam.</p>
+Com o passar do tempo, nossa amizade se transformou em amor. Descobrimos que compartilhávamos sonhos, risadas e até mesmo algumas manias estranhas. Cada encontro era uma nova aventura, cada mensagem trocada um motivo para sorrir.
+                </p>
+                <p>
+Os dias se transformaram em semanas, as semanas em meses, e a cada novo momento, a certeza crescia: éramos feitos um para o outro. Construímos memórias em viagens, rimos até a barriga doer. Aprendemos a admirar as qualidades um do outro e a celebrar as diferenças que nos complementam.
+                </p>
                 <div class="story-gallery">
                     <img src="imagens/IMG-20230422-WA0035.jpg" alt="Foto do casal 1">
                     <img src="imagens/IMG-20231112-WA0024.jpg" alt="Foto do casal 2">
@@ -79,14 +85,14 @@ Os dias se transformaram em semanas, as semanas em meses, e a cada novo momento,
 
         <section id="evento" class="section bg-light">
             <div class="container">
-                <h2>Detalhes do Evento</h2>
+                <h2><i class="fa-solid fa-calendar-day"></i> Detalhes do Evento</h2>
                 <div class="event-details">
                     <div class="detail-block">
                         <h3>Cerimônia & Recepção</h3>
                         <p><strong>Data:</strong> 24/08/2025</p>
                         <p><strong>Horário:</strong> 15:00</p>
                         <p><strong>Local:</strong> Catre São Luiz do Purunã</p>
-                        <p><a href="https://www.google.com.br/maps/place/CATRE+-+S%C3%A3o+Lu%C3%ADs+do+Purun%C3%A3/@-25.4513324,-49.7099639,17z/data=!3m1!4b1!4m6!3m5!1s0x94dd40693963baa3:0x47fef409f033af4e!8m2!3d-25.4513324!4d-49.7073836!16s%2Fg%2F11b6pg0rbm?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa</a></p>
+                        <p><a href="https://www.google.com.br/maps/place/CATRE+-+S%C3%A3o+Lu%C3%ADs+do+Purun%C3%A3/@-25.4513324,-49.7099639,17z/data=!3m1!4b1!4m6!3m5!1s0x94dd40693963baa3:0x47fef409f033af4e!8m2!3d-25.4513324!4d-49.7073836!16s%2Fg%2F11b6pg0rbm?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="btn-mapa"><i class="fa-solid fa-map-location-dot"></i> Ver no Mapa</a></p>
                     </div>
                 </div>
             </div>
@@ -94,11 +100,13 @@ Os dias se transformaram em semanas, as semanas em meses, e a cada novo momento,
 
         <section id="presentes" class="section">
             <div class="container">
-                <h2>Presentes</h2>
+                <h2><i class="fa-solid fa-gift"></i> Presentes</h2>
                 <p>O melhor presente é sua presença! Mas, se desejar nos presentear, aceitamos contribuições em dinheiro via PIX:</p>
                 <div style="margin: 20px 0;">
-                    <strong>Chave PIX-CPF:</strong> <span id="pix-key">+55 41 98415-7085</span>
-                    <button onclick="copiarPix()" style="margin-left:10px; background:#9575cd; color:#fff; border:none; padding:5px 10px; border-radius:5px;">Copiar</button>
+                    <strong><i class="fa-brands fa-pix"></i> Chave PIX-CPF:</strong> <span id="pix-key">+55 41 98415-7085</span>
+                    <button onclick="copiarPix()" style="margin-left:10px; background:#9575cd; color:#fff; border:none; padding:5px 10px; border-radius:5px;">
+                        <i class="fa-regular fa-copy"></i> Copiar
+                    </button>
                 </div>
                 <p>Fique à vontade para escolher o valor que desejar. Agradecemos de coração!</p>
             </div>
@@ -106,12 +114,16 @@ Os dias se transformaram em semanas, as semanas em meses, e a cada novo momento,
 
         <section id="confirmacao" class="section bg-light">
             <div class="container">
-                <h2>Confirme Sua Presença (RSVP)</h2>
-                <p>Por favor, confirme sua presença até o dia 10/08/2025 para nos ajudar com a organização.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO8pH6F7x86kgk3wEwbH1YW8OPMHMvoRoNHEy2S12j1Z87eA/viewform?usp=dialog" target="_blank" style="display:inline-block; background:#9575cd; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-size:1.1em; margin:20px 0;">Clique aqui para confirmar presença</a>
+                <h2><i class="fa-solid fa-check-circle"></i> Confirme Sua Presença</h2>
+                <p>Por favor, confirme sua presença até o dia 10/08/2025 às 15:00 para nos ajudar com a organização.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdO8pH6F7x86kgk3wEwbH1YW8OPMHMvoRoNHEy2S12j1Z87eA/viewform?usp=dialog"
+                   target="_blank"
+                   style="display:inline-block; background:#9575cd; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-size:1.1em; margin:20px 0;">
+                    <i class="fa-solid fa-paper-plane"></i> Clique aqui para confirmar presença
+                </a>
                 <p>Se tiver alguma dúvida, entre em contato:</p>
-                <P>(41) 997884294( Júnior) </P>
-                <P>(41) 98415-7085 (Vitória)</P>
+                <p><i class="fa-brands fa-whatsapp"></i> (41) 997884294 (Júnior)</p>
+                <p><i class="fa-brands fa-whatsapp"></i> (41) 98415-7085 (Vitória)</p>
             </div>
         </section>
     </main>
