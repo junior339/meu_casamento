@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casamento de Júnior & Vitória</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Contagem regressiva
+        document.addEventListener('DOMContentLoaded', function() {
+            const targetDate = new Date('2025-08-24T15:00:00');
+            const countdown = document.getElementById('countdown');
+            function updateCountdown() {
+                const now = new Date();
+                const diff = targetDate - now;
+                if (diff <= 0) {
+                    countdown.textContent = "É hoje! Viva os noivos!";
+                    return;
+                }
+                const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
+                const minutos = Math.floor((diff / (1000 * 60)) % 60);
+                const segundos = Math.floor((diff / 1000) % 60);
+                countdown.textContent = `${dias} dias, ${horas}h ${minutos}m ${segundos}s para o grande dia!`;
+            }
+            setInterval(updateCountdown, 1000);
+            updateCountdown();
+        });
+        // Copiar chave PIX
+        function copiarPix() {
+            navigator.clipboard.writeText('junior.vitoria.pix@gmail.com');
+            alert('Chave PIX copiada!');
+        }
+    </script>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Junior & Vitória</h1>
+            <p>Convidam você para o dia mais especial de nossas vidas!</p>
+            <p class="date">24 de agosto de 2025</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#historia">Nossa História</a></li>
+            <li><a href="#evento">Detalhes do Evento</a></li>
+            <li><a href="#presentes">Presentes</a></li>
+            <li><a href="#confirmacao">Confirme sua Presença</a></li>
+        </ul>
+    </nav>
+
+    <div style="text-align:center; margin: 30px 0;">
+        <h2 style="color:#7e57c2;">Contagem Regressiva</h2>
+        <div id="countdown" style="font-size:1.5em; font-weight:bold;"></div>
+    </div>
+
+    <main>
+        <section id="historia" class="section">
+            <div class="container">
+                <h2>Nossa História</h2>
+                <p>
+
+Bem-vindos ao nosso cantinho digital, onde compartilhamos os capítulos mais especiais da nossa jornada! Nem sempre soubemos que iríamos nos encontrar, mas o destino, com sua magia particular, fez com que nossos caminhos se cruzassem.
+<br>
+Tudo começou em uma tarde ensolarada em um calebe de amigos, onde olhares se encontraram e sorrisos tímidos se trocaram. Desde aquele momento, uma conexão inexplicável nos uniu. As conversas fluíram naturalmente, e logo percebemos que havia algo especial entre nós.</p>
+                <p>Com o passar do tempo, nossa amizade se transformou em amor. Descobrimos que compartilhávamos sonhos, risadas e até mesmo algumas manias estranhas. Cada encontro era uma nova aventura, cada mensagem trocada um motivo para sorrir.</p>
+                <p>
+
+Os dias se transformaram em semanas, as semanas em meses, e a cada novo momento, a certeza crescia: éramos feitos um para o outro.Construímos memórias em viagens, rimos até a barriga doer . Aprendemos a admirar as qualidades um do outro e a celebrar as diferenças que nos complementam.</p>
+                <div class="story-gallery">
+                    <img src="imagens/IMG-20230422-WA0035.jpg" alt="Foto do casal 1">
+                    <img src="imagens/IMG-20231112-WA0024.jpg" alt="Foto do casal 2">
+                    <img src="imagens/IMG_20210917_213918_093~2.jpg" alt="Foto do casal 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="evento" class="section bg-light">
+            <div class="container">
+                <h2>Detalhes do Evento</h2>
+                <div class="event-details">
+                    <div class="detail-block">
+                        <h3>Cerimônia & Recepção</h3>
+                        <p><strong>Data:</strong> 24/08/2025</p>
+                        <p><strong>Horário:</strong> 15:00</p>
+                        <p><strong>Local:</strong> Catre São Luiz do Purunã</p>
+                        <p><a href="https://www.google.com.br/maps/place/CATRE+-+S%C3%A3o+Lu%C3%ADs+do+Purun%C3%A3/@-25.4513324,-49.7099639,17z/data=!3m1!4b1!4m6!3m5!1s0x94dd40693963baa3:0x47fef409f033af4e!8m2!3d-25.4513324!4d-49.7073836!16s%2Fg%2F11b6pg0rbm?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Ver no Mapa</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="presentes" class="section">
+            <div class="container">
+                <h2>Presentes</h2>
+                <p>O melhor presente é sua presença! Mas, se desejar nos presentear, aceitamos contribuições em dinheiro via PIX:</p>
+                <div style="margin: 20px 0;">
+                    <strong>Chave PIX:</strong> <span id="pix-key">junior.vitoria.pix@gmail.com</span>
+                    <button onclick="copiarPix()" style="margin-left:10px; background:#9575cd; color:#fff; border:none; padding:5px 10px; border-radius:5px;">Copiar</button>
+                </div>
+                <p>Fique à vontade para escolher o valor que desejar. Agradecemos de coração!</p>
+            </div>
+        </section>
+
+        <section id="confirmacao" class="section bg-light">
+            <div class="container">
+                <h2>Confirme Sua Presença (RSVP)</h2>
+                <p>Por favor, confirme sua presença até o dia 10/08/2025 para nos ajudar com a organização.</p>
+                <a href="https://forms.gle/SEU_FORMULARIO_AQUI" target="_blank" style="display:inline-block; background:#9575cd; color:#fff; padding:12px 24px; border-radius:6px; text-decoration:none; font-size:1.1em; margin:20px 0;">Clique aqui para confirmar presença</a>
+                <p>Se tiver alguma dúvida, entre em contato: (41) 99999-9999 (Júnior) ou (41) 88888-8888 (Vitória)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Júnior & Vitória. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
