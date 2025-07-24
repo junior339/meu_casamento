@@ -1,13 +1,16 @@
-/* Estilos Gerais */
+/* Estilos Gerais - Dark Dracula com lavanda */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 :root {
-    --primary-color: #7e57c2; /* Lavanda escuro */
-    --secondary-color: #b39ddb; /* Lavanda claro */
-    --text-color: #333;
-    --light-bg: #f6f3fa;
-    --white: #FFFFFF;
+    --primary-color: #b39ddb; /* Lavanda claro */
+    --secondary-color: #9575cd; /* Lavanda médio */
+    --accent-color: #ff79c6; /* Rosa Dracula */
+    --background: #282a36; /* Dracula background */
+    --surface: #383a59; /* Superfície cards */
+    --text-color: #f8f8f2; /* Dracula foreground */
+    --muted: #6272a4; /* Dracula comment */
+    --white: #ffffff;
 }
 
 body {
@@ -16,7 +19,7 @@ body {
     padding: 0;
     color: var(--text-color);
     line-height: 1.6;
-    background-color: var(--white);
+    background-color: var(--background);
 }
 
 .container {
@@ -45,7 +48,7 @@ h3 {
 }
 
 a {
-    color: var(--primary-color);
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -57,10 +60,11 @@ a:hover {
 .section {
     padding: 60px 0;
     text-align: center;
+    background: var(--background);
 }
 
 .section.bg-light {
-    background-color: var(--light-bg);
+    background-color: #343553;
 }
 
 /* Header - Hero Section */
@@ -78,9 +82,9 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4); /* Escurece a imagem de fundo */
-    backdrop-filter: blur(4px); /* Desfoque suave */
-    -webkit-backdrop-filter: blur(4px); /* Suporte Safari */
+    background-color: rgba(40, 42, 54, 0.7); /* Dracula background com transparência */
+    backdrop-filter: blur(6px); /* Desfoque suave */
+    -webkit-backdrop-filter: blur(6px);
     z-index: 0;
 }
 
@@ -92,30 +96,30 @@ a:hover {
 .hero-content h1 {
     font-size: 4em;
     margin-bottom: 10px;
-    color: var(--white);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--primary-color);
+    text-shadow: 2px 2px 8px #000;
 }
 
 .hero-content p {
     font-size: 1.5em;
     margin-bottom: 5px;
-    color: var(--white);
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: var(--text-color);
+    text-shadow: 1px 1px 3px #000;
 }
 
 .hero-content .date {
     font-size: 1.8em;
     font-weight: bold;
     margin-top: 20px;
-    color: var(--white);
+    color: var(--accent-color);
 }
 
 /* Navbar */
 .navbar {
-    background-color: var(--primary-color);
+    background-color: #343553;
     padding: 15px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(40, 42, 54, 0.5);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -135,7 +139,7 @@ a:hover {
 }
 
 .navbar a {
-    color: var(--white);
+    color: var(--primary-color);
     font-weight: bold;
     font-size: 1.1em;
     padding: 5px 0;
@@ -145,8 +149,8 @@ a:hover {
 
 .navbar a:hover,
 .navbar a.active {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
 }
 
 /* Nossa História */
@@ -164,12 +168,15 @@ a:hover {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(80, 71, 137, 0.2);
     transition: transform 0.3s ease;
+    border: 2px solid var(--secondary-color);
+    background: var(--surface);
 }
 
 .story-gallery img:hover {
     transform: scale(1.05);
+    border-color: var(--accent-color);
 }
 
 /* Detalhes do Evento */
@@ -182,14 +189,15 @@ a:hover {
 }
 
 .detail-block {
-    background-color: var(--white);
+    background-color: var(--surface);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(80, 71, 137, 0.15);
     flex: 1;
     min-width: 280px;
     max-width: 45%;
     text-align: left;
+    color: var(--text-color);
 }
 
 .detail-block h3 {
@@ -205,13 +213,14 @@ a:hover {
 
 /* Formulário de RSVP */
 .rsvp-form {
-    background-color: var(--white);
+    background-color: var(--surface);
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(80, 71, 137, 0.15);
     max-width: 600px;
     margin: 30px auto 0;
     text-align: left;
+    color: var(--text-color);
 }
 
 .rsvp-form label {
@@ -228,9 +237,11 @@ a:hover {
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-color);
     border-radius: 4px;
     font-size: 1em;
+    background: #23243a;
+    color: var(--text-color);
 }
 
 .rsvp-form textarea {
@@ -238,7 +249,7 @@ a:hover {
 }
 
 .rsvp-form button {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--white);
     padding: 12px 25px;
     border: none;
@@ -252,13 +263,14 @@ a:hover {
 }
 
 .rsvp-form button:hover {
-    background-color: #5e35b1; /* Lavanda mais escuro */
+    background-color: var(--secondary-color);
+    color: var(--background);
 }
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: #343553;
+    color: var(--primary-color);
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
